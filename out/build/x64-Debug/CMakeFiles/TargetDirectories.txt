@@ -1,0 +1,3 @@
+C:/Users/670336309/OneDrive - Signify/Dokumenty/Parser/TransportStreamParser/out/build/x64-Debug/CMakeFiles/TS-PARSER.dir
+C:/Users/670336309/OneDrive - Signify/Dokumenty/Parser/TransportStreamParser/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/670336309/OneDrive - Signify/Dokumenty/Parser/TransportStreamParser/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
