@@ -68,7 +68,24 @@ public:
 
 protected:
   //TODO - header fields, e.g.:
+
+
+    //Sync byte(SB) : 8 bits
+    //Transport error indicator(E) : 1 bit
+    //Payload unit start indicator(S) : 1 bit
+    //Transport priority(T) : 1 bit
+    //Packet Identifier(PID) : 13 bits
+    //Transport scrambling control(TSC) : 2 bits
+    //Adaptation field control(AFC) : 2 bits
+    //Continuity counter(CC) : 4 bits
   uint8_t  m_SB;
+  bool m_E;  // Transport error indicator
+  bool m_S;  // Payload unit start indicator
+  bool m_T;  // Transport priority
+  uint16_t m_PID; // Packet Identifier
+  uint8_t m_TSC; // Transport scrambling control
+  uint8_t m_AFC; // Adaptation field control
+  uint8_t m_CC; // Continuity counter
 
 public:
   void     Reset();

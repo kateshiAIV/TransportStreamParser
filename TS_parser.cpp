@@ -1,33 +1,51 @@
-#include "tsCommon.h"
+#include <iostream>
+#include <fstream>
+#include <cstdio> // For FILE* and fopen
+#include "tsCommon.h"   
 #include "tsTransportStream.h"
+
+using namespace std;
 
 //=============================================================================================================================================================================
 
-int main(int argc, char *argv[ ], char *envp[ ])
+int main(int argc, char* argv[], char* envp[])
 {
-  // TODO - open file
-  // TODO - check if file if opened
 
-  xTS_PacketHeader    TS_PacketHeader;
 
-  int32_t TS_PacketId = 0;
-  while(/*not eof*/ 0)
-  {
-    // TODO - read from file
+   
+    FILE* transportStream = std::fopen("example_new.ts", "rb");
 
-    TS_PacketHeader.Reset();
-    TS_PacketHeader.Parse(/*TS_PacketBuffer*/ nullptr);
+    
+    if (!transportStream) {
+        cout << "File opening failed" << endl;
+        return EXIT_FAILURE;
+    }
+    else {
+        cout << "File opened successfully (binary mode)" << endl;
+    }
 
-    printf("%010d ", TS_PacketId);
-    TS_PacketHeader.Print();
-    printf("\n");
+    xTS_PacketHeader TS_PacketHeader;
 
-    TS_PacketId++;
-  }
-  
-  // TODO - close file
 
-  return EXIT_SUCCESS;
+    const size_t TS_PACKET_SIZE = 188;
+    uint8_t TS_PacketBuffer[TS_PACKET_SIZE];
+    int32_t TS_PacketId = 0;
+
+    while (std::fread(TS_PacketBuffer, 1, TS_PACKET_SIZE, transportStream) == TS_PACKET_SIZE) {
+        TS_PacketHeader.Reset();
+        TS_PacketHeader.Parse(TS_PacketBuffer);
+
+        printf("%010d ", TS_PacketId);
+        TS_PacketHeader.Print();
+        printf("\n");
+
+        TS_PacketId++;
+    }
+
+    // Close the file
+    std::fclose(transportStream);
+
+    return EXIT_SUCCESS;
 }
 
 //=============================================================================================================================================================================
