@@ -34,12 +34,21 @@ int main(int argc, char* argv[], char* envp[])
 
     while (std::fread(TS_PacketBuffer, 1, TS_PACKET_SIZE, transportStream) == TS_PACKET_SIZE) {
         TS_PacketHeader.Reset();
+		TS_AdaptationField.Reset();
         TS_PacketHeader.Parse(TS_PacketBuffer);
+
+        if (!(TS_PacketHeader.getAdaptationFieldControl() == 2 || TS_PacketHeader.getAdaptationFieldControl() == 3)) {
+            printf("%010d ", TS_PacketId);
+            TS_PacketHeader.Print();
+            printf("\n");
+        }
 
         if (TS_PacketHeader.getAdaptationFieldControl() == 2 || TS_PacketHeader.getAdaptationFieldControl() == 3)
         {
+			TS_AdaptationField.Parse(TS_PacketBuffer, TS_PacketHeader.getAdaptationFieldControl());
             printf("%010d ", TS_PacketId);
             TS_PacketHeader.Print();
+            TS_AdaptationField.Print();
             printf("\n");
         }
 

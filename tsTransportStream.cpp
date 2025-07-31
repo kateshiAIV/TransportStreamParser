@@ -64,7 +64,15 @@ void xTS_PacketHeader::Print() const
 // @brief Reset - reset all TS packet header fields
 void xTS_AdaptationField::Reset()
 {
-    //reset
+	m_AdaptationFieldLength = 0;
+    m_DC = 0; // Discontinuity indicator
+    m_RA = 0; // Random access indicator
+    m_SP = 0; // Elementary stream priority indicator 
+    m_PR = 0; // Program Clock Reference flag
+    m_OR = 0; // Original Program Clock Reference flag
+    m_SF = 0; // Splicing point flag
+    m_TP = 0; // Transport private data flag 
+    m_EX = 0; // Adaptation field extension flag
 }
 /**
 @brief Parse adaptation field
@@ -73,14 +81,36 @@ void xTS_AdaptationField::Reset()
 corresponding TS packet header
 @return Number of parsed bytes (length of AF or -1 on failure)
 */
-int32_t xTS_AdaptationField::Parse(const uint8_t* PacketBuffer, uint8_t AdaptationFieldControl) // pass from TS packet header
+int32_t xTS_AdaptationField::Parse(const uint8_t* Input, uint8_t AdaptationFieldControl) // pass from TS packet header
 {
 
-	return -1; //TODO: implement
+
+    if (Input == nullptr) return -1;
+    m_AdaptationFieldLength = Input[4];
+    m_RA = (Input[5] & 0x80) != 0;
+    m_DC = (Input[5] & 0x40) != 0;
+    m_SP = (Input[5] & 0x20) != 0;
+    m_PR = (Input[5] & 0x10) != 0;
+    m_OR = (Input[5] & 0x08) != 0;
+    m_SF = (Input[5] & 0x04) != 0;
+    m_TP = (Input[5] & 0x02) != 0;
+    m_EX = (Input[5] & 0x01) != 0;
+
+
+	return m_AdaptationFieldLength; //TODO: implement
     //parsing
 }
 /// @brief Print all TS packet header fields
 void xTS_AdaptationField::Print() const
 {
-    //print print print
+    printf(" || AF: L=%3d DC=%d RA=%d SP=%d PR=%d OR=%d SF=%d TP=%d EX=%d",
+        m_AdaptationFieldLength,
+        m_RA,
+        m_DC,
+        m_SP,
+        m_PR,
+        m_OR,
+        m_SF,
+        m_TP,
+        m_EX);
 }
