@@ -95,6 +95,7 @@ public:
 public:
   //TODO - direct acces to header field value, e.g.:
   uint8_t  getSyncByte() const { return m_SB; }  
+  uint8_t getAdaptationFieldControl() const { return m_AFC; }
 
 public:
   //TODO - derrived informations

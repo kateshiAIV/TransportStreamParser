@@ -25,6 +25,7 @@ int main(int argc, char* argv[], char* envp[])
     }
 
     xTS_PacketHeader TS_PacketHeader;
+    xTS_AdaptationField TS_AdaptationField;
 
 
     const size_t TS_PACKET_SIZE = 188;
@@ -35,9 +36,12 @@ int main(int argc, char* argv[], char* envp[])
         TS_PacketHeader.Reset();
         TS_PacketHeader.Parse(TS_PacketBuffer);
 
-        printf("%010d ", TS_PacketId);
-        TS_PacketHeader.Print();
-        printf("\n");
+        if (TS_PacketHeader.getAdaptationFieldControl() == 2 || TS_PacketHeader.getAdaptationFieldControl() == 3)
+        {
+            printf("%010d ", TS_PacketId);
+            TS_PacketHeader.Print();
+            printf("\n");
+        }
 
         TS_PacketId++;
     }
