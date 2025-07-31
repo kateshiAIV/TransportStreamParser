@@ -103,3 +103,31 @@ public:
 };
 
 //=============================================================================================================================================================================
+
+
+class xTS_AdaptationField
+{
+protected:
+    //setup
+    uint8_t m_AdaptationFieldControl;
+    //mandatory fields
+    uint8_t m_AdaptationFieldLength;
+    //optional fields - PCR
+	bool m_DC; // Discontinuity indicator
+    bool m_RA; // Random access indicator
+    bool m_SP; // Elementary stream priority indicator 
+    bool m_PR; // Program Clock Reference flag
+    bool m_OR; // Original Program Clock Reference flag
+    bool m_SF; // Splicing point flag
+    bool m_TP; // Transport private data flag 
+    bool m_EX; // Adaptation field extension flag
+public:
+    void Reset();
+    int32_t Parse(const uint8_t* PacketBuffer, uint8_t AdaptationFieldControl);
+    void Print() const;
+public:
+    //mandatory fields
+    uint8_t getAdaptationFieldLength() const {return m_AdaptationFieldLength;}
+    //derived values
+    uint32_t getNumBytes() const { return m_AdaptationFieldLength + 1; }
+};
