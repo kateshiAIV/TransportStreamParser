@@ -99,11 +99,14 @@ public:
   uint8_t getAdaptationFieldControl() const { return m_AFC; }
   uint16_t getPID() const { return m_PID; } // Packet Identifier
   bool  hasAdaptationField() const { return (m_AFC & 0x02) != 0; } // Adaptation field present
+  uint8_t getCC() const { return m_CC; } // Continuity counter
 
 public:
   //TODO - derrived informations
   //bool     hasAdaptationField() const { /*TODO*/ }
-  //bool     hasPayload        () const { /*TODO*/ }
+	bool     hasPayload() const { return (m_AFC & 0x01) != 0; } // Payload present
+    bool getPayloadUnitStartIndicator() const { return m_S; }
+
 };
 
 //=============================================================================================================================================================================
@@ -157,21 +160,26 @@ public:
         eStreamId_DSMCC_stream = 0xF2,
         eStreamId_ITUT_H222_1_type_E = 0xF8,
     };
+
 protected:
     //PES packet header
     uint32_t m_PacketStartCodePrefix;
     uint8_t m_StreamId;
     uint16_t m_PacketLength;
+
 public:
     void Reset();
     int32_t Parse(const uint8_t* Input);
     void Print() const;
+
 public:
     //PES packet header
     uint32_t getPacketStartCodePrefix() const { return m_PacketStartCodePrefix; }
     uint8_t getStreamId() const { return m_StreamId; }
     uint16_t getPacketLength() const { return m_PacketLength; }
 };
+
+
 
 class xPES_Assembler
 {
@@ -184,6 +192,7 @@ public:
         AssemblingContinue,
         AssemblingFinished,
     };
+
 protected:
     //setup
     int32_t m_PID;
@@ -195,12 +204,14 @@ protected:
     int8_t m_LastContinuityCounter;
     bool m_Started;
     xPES_PacketHeader m_PESH;
+
 public:
     void Init(int32_t PID);
     eResult AbsorbPacket(const uint8_t* TransportStreamPacket, const xTS_PacketHeader* PacketHeader, const xTS_AdaptationField* AdaptationField);
     void PrintPESH() const { m_PESH.Print(); }
     uint8_t* getPacket() { return m_Buffer; }
     int32_t getNumPacketBytes() const { return m_DataOffset; }
+
 protected:
     void xBufferReset();
     void xBufferAppend(const uint8_t* Data, int32_t Size);
