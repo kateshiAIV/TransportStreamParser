@@ -74,6 +74,8 @@ void xTS_AdaptationField::Reset()
     m_TP = 0; // Transport private data flag 
     m_EX = 0; // Adaptation field extension flag
     program_clock_reference_base = 0;
+    program_clock_reference_extension = 0;
+    m_PCR = 0;
 }
 /**
 @brief Parse adaptation field
@@ -88,6 +90,9 @@ int32_t xTS_AdaptationField::Parse(const uint8_t* Input, uint8_t AdaptationField
 
     if (Input == nullptr) return -1;
     m_AdaptationFieldLength = Input[4];
+    if (m_AdaptationFieldLength == 0) {
+        return 0; // No adaptation field
+    }
     m_RA = (Input[5] & 0x80) != 0;
     m_DC = (Input[5] & 0x40) != 0;
     m_SP = (Input[5] & 0x20) != 0;
@@ -96,35 +101,32 @@ int32_t xTS_AdaptationField::Parse(const uint8_t* Input, uint8_t AdaptationField
     m_SF = (Input[5] & 0x04) != 0;
     m_TP = (Input[5] & 0x02) != 0;
     m_EX = (Input[5] & 0x01) != 0;
-    //0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
-    // ??
-    if (m_PR == 1) {
-        m_PCR |= static_cast<uint64_t>(Input[6]) << 25;
-        m_PCR |= static_cast<uint64_t>(Input[7]) << 17;
-        m_PCR |= static_cast<uint64_t>(Input[8]) << 9;
-        m_PCR |= static_cast<uint64_t>(Input[9]) << 1;
-        m_PCR |= static_cast<uint64_t>(Input[10]) >> 7;
-    }
-    
-    if (m_PR == 1) {
-        uint64_t base =
-            ((uint64_t)Input[6] << 25) |
+
+
+    if (m_PR) {
+        if (m_AdaptationFieldLength < 7) {
+            return m_AdaptationFieldLength;
+        }
+
+
+        uint64_t base = 
+            (((uint64_t)Input[6] << 25) |
             ((uint64_t)Input[7] << 17) |
             ((uint64_t)Input[8] << 9) |
             ((uint64_t)Input[9] << 1) |
-            ((uint64_t)(Input[10]) >> 7);
+            ((uint64_t)Input[10] >> 7));
 
-        uint16_t extension =
-            ((Input[10] & 0x01) << 8) | Input[11];
+        uint64_t extension = (((uint64_t)Input[10] & 0x01 << 8) | (uint64_t)Input[11]);
 
-        program_clock_reference_base = base;
-        program_clock_reference_extension = extension;
-        m_PCR = (base);
+		program_clock_reference_base = base;
+		program_clock_reference_extension = extension;
 
-        //101101010000010000000000000 // 94904320
-        //11010100001000001011000000 // 55608000
-//base  //101101010000010000 ?? wtf
+        m_PCR = (base * 300) + extension;
+       
+
     }
+
+    return m_AdaptationFieldLength;
 
 
 
