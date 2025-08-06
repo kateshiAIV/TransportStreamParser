@@ -124,7 +124,9 @@ protected:
     bool m_EX; // Adaptation field extension flag
 	uint64_t program_clock_reference_base;  
     uint64_t program_clock_reference_extension; 
+    uint64_t mStuffingBytes;
     uint64_t m_PCR;
+	float m_time; // PCR time in seconds
 public:
     void Reset();
     int32_t Parse(const uint8_t* PacketBuffer, uint8_t AdaptationFieldControl);

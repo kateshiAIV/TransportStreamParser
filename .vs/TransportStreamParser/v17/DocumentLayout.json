@@ -7,8 +7,29 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:tsTransportStream.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\670336309\\AppData\\Local\\Temp\\bec60b14-f842-414c-8b6f-aebd0062b42c_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\670336309\\OneDrive - Signify\\Dokumenty\\Parser\\TransportStreamParser\\tsTransportStream.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:tsTransportStream.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\670336309\\AppData\\Local\\Temp\\3b23c2a4-35e1-4ed7-9e0a-76f71f32e4cb_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\670336309\\AppData\\Local\\Temp\\0cf595c7-2046-4fc2-ae8e-813b8ca26f11_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsCommon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\670336309\\AppData\\Local\\Temp\\fe51a938-27ca-4fd0-90fa-d51e0a06a1c8_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\670336309\\AppData\\Local\\Temp\\e21fcc00-9414-4fcb-8d87-9b1a6ff48d95_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\TS_parser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\670336309\\AppData\\Local\\Temp\\6c580b45-1077-4f7e-bbfd-1757690cafbd_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\670336309\\AppData\\Local\\Temp\\30e7028b-e862-4fe8-9325-096d82f8d472_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsCommon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\670336309\\OneDrive - Signify\\Dokumenty\\Parser\\TransportStreamParser\\TS_parser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -27,15 +48,106 @@
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 100,
+      "VerticalTabListWidth": 192,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TS_parser.cpp",
+              "DocumentMoniker": "C:\\Users\\670336309\\AppData\\Local\\Temp\\e21fcc00-9414-4fcb-8d87-9b1a6ff48d95_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\TS_parser.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\e21fcc00-9414-4fcb-8d87-9b1a6ff48d95_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\TS_parser.cpp",
+              "ToolTip": "C:\\Users\\670336309\\AppData\\Local\\Temp\\e21fcc00-9414-4fcb-8d87-9b1a6ff48d95_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\TS_parser.cpp [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\e21fcc00-9414-4fcb-8d87-9b1a6ff48d95_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\TS_parser.cpp [Read Only]",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-06T07:06:44.889Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "tsCommon.h",
+              "DocumentMoniker": "C:\\Users\\670336309\\AppData\\Local\\Temp\\0cf595c7-2046-4fc2-ae8e-813b8ca26f11_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsCommon.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\0cf595c7-2046-4fc2-ae8e-813b8ca26f11_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsCommon.h",
+              "ToolTip": "C:\\Users\\670336309\\AppData\\Local\\Temp\\0cf595c7-2046-4fc2-ae8e-813b8ca26f11_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsCommon.h [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\0cf595c7-2046-4fc2-ae8e-813b8ca26f11_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsCommon.h [Read Only]",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-06T07:06:40.087Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "tsTransportStream.h",
+              "DocumentMoniker": "C:\\Users\\670336309\\AppData\\Local\\Temp\\3b23c2a4-35e1-4ed7-9e0a-76f71f32e4cb_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\3b23c2a4-35e1-4ed7-9e0a-76f71f32e4cb_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.h",
+              "ToolTip": "C:\\Users\\670336309\\AppData\\Local\\Temp\\3b23c2a4-35e1-4ed7-9e0a-76f71f32e4cb_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.h [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\3b23c2a4-35e1-4ed7-9e0a-76f71f32e4cb_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.h [Read Only]",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAAAcAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-06T07:06:29.926Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "tsTransportStream.cpp",
+              "DocumentMoniker": "C:\\Users\\670336309\\AppData\\Local\\Temp\\bec60b14-f842-414c-8b6f-aebd0062b42c_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\bec60b14-f842-414c-8b6f-aebd0062b42c_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.cpp",
+              "ToolTip": "C:\\Users\\670336309\\AppData\\Local\\Temp\\bec60b14-f842-414c-8b6f-aebd0062b42c_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.cpp [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\bec60b14-f842-414c-8b6f-aebd0062b42c_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.cpp [Read Only]",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAAAHAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-06T07:06:08.964Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "tsTransportStream.h",
+              "DocumentMoniker": "C:\\Users\\670336309\\AppData\\Local\\Temp\\6c580b45-1077-4f7e-bbfd-1757690cafbd_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\6c580b45-1077-4f7e-bbfd-1757690cafbd_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.h",
+              "ToolTip": "C:\\Users\\670336309\\AppData\\Local\\Temp\\6c580b45-1077-4f7e-bbfd-1757690cafbd_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.h [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\6c580b45-1077-4f7e-bbfd-1757690cafbd_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.h [Read Only]",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-06T07:05:58.201Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "tsCommon.h",
+              "DocumentMoniker": "C:\\Users\\670336309\\AppData\\Local\\Temp\\30e7028b-e862-4fe8-9325-096d82f8d472_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsCommon.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\30e7028b-e862-4fe8-9325-096d82f8d472_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsCommon.h",
+              "ToolTip": "C:\\Users\\670336309\\AppData\\Local\\Temp\\30e7028b-e862-4fe8-9325-096d82f8d472_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsCommon.h [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\30e7028b-e862-4fe8-9325-096d82f8d472_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsCommon.h [Read Only]",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-06T07:05:49.72Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "tsTransportStream.cpp",
+              "DocumentMoniker": "C:\\Users\\670336309\\AppData\\Local\\Temp\\fe51a938-27ca-4fd0-90fa-d51e0a06a1c8_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\fe51a938-27ca-4fd0-90fa-d51e0a06a1c8_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.cpp",
+              "ToolTip": "C:\\Users\\670336309\\AppData\\Local\\Temp\\fe51a938-27ca-4fd0-90fa-d51e0a06a1c8_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.cpp [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\fe51a938-27ca-4fd0-90fa-d51e0a06a1c8_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.cpp [Read Only]",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAAAHAAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-06T06:57:00.434Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "tsTransportStream.cpp",
               "DocumentMoniker": "C:\\Users\\670336309\\AppData\\Local\\Temp\\86da7d10-297a-4981-acb2-e769e6685462_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.cpp",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\86da7d10-297a-4981-acb2-e769e6685462_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.cpp",
@@ -47,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "tsTransportStream.h",
               "DocumentMoniker": "C:\\Users\\670336309\\AppData\\Local\\Temp\\096079e2-e615-4bd6-a2d8-1e477e33f39a_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.h",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\096079e2-e615-4bd6-a2d8-1e477e33f39a_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.h",
@@ -59,13 +171,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "tsTransportStream.h",
               "DocumentMoniker": "C:\\Users\\670336309\\OneDrive - Signify\\Dokumenty\\Parser\\TransportStreamParser\\tsTransportStream.h",
               "RelativeDocumentMoniker": "tsTransportStream.h",
               "ToolTip": "C:\\Users\\670336309\\OneDrive - Signify\\Dokumenty\\Parser\\TransportStreamParser\\tsTransportStream.h",
               "RelativeToolTip": "tsTransportStream.h",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAAAH0AAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAADEAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-07-15T14:28:08.014Z",
               "EditorCaption": ""
@@ -78,27 +190,27 @@
               "RelativeDocumentMoniker": "tsTransportStream.cpp",
               "ToolTip": "C:\\Users\\670336309\\OneDrive - Signify\\Dokumenty\\Parser\\TransportStreamParser\\tsTransportStream.cpp",
               "RelativeToolTip": "tsTransportStream.cpp",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAAAH4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAAAHoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-07-15T14:23:49.911Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "TS_parser.cpp",
               "DocumentMoniker": "C:\\Users\\670336309\\OneDrive - Signify\\Dokumenty\\Parser\\TransportStreamParser\\TS_parser.cpp",
               "RelativeDocumentMoniker": "TS_parser.cpp",
               "ToolTip": "C:\\Users\\670336309\\OneDrive - Signify\\Dokumenty\\Parser\\TransportStreamParser\\TS_parser.cpp",
               "RelativeToolTip": "TS_parser.cpp",
-              "ViewState": "AgIAABwAAAAAAAAAAAAwwDIAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAADYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-07-15T06:14:24.631Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "CMake Overview Pages",
               "DocumentMoniker": "CMake Overview Pages",
               "ToolTip": "CMake Overview Pages",

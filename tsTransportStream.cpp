@@ -75,7 +75,9 @@ void xTS_AdaptationField::Reset()
     m_EX = 0; // Adaptation field extension flag
     program_clock_reference_base = 0;
     program_clock_reference_extension = 0;
+	mStuffingBytes = 0;
     m_PCR = 0;
+	m_time = 0.0f; // PCR time in seconds
 }
 /**
 @brief Parse adaptation field
@@ -86,6 +88,8 @@ corresponding TS packet header
 */
 int32_t xTS_AdaptationField::Parse(const uint8_t* Input, uint8_t AdaptationFieldControl) // pass from TS packet header
 {
+
+    xTS m_xTS;
 
 
     if (Input == nullptr) return -1;
@@ -102,8 +106,9 @@ int32_t xTS_AdaptationField::Parse(const uint8_t* Input, uint8_t AdaptationField
     m_TP = (Input[5] & 0x02) != 0;
     m_EX = (Input[5] & 0x01) != 0;
 
+ 
 
-    if (m_PR) {
+    if (m_PR || m_OR) {
         if (m_AdaptationFieldLength < 7) {
             return m_AdaptationFieldLength;
         }
@@ -121,24 +126,19 @@ int32_t xTS_AdaptationField::Parse(const uint8_t* Input, uint8_t AdaptationField
 		program_clock_reference_base = base;
 		program_clock_reference_extension = extension;
 
-        m_PCR = (base * 300) + extension;
-       
+        m_PCR = (base * m_xTS.BaseToExtendedClockMultiplier) + extension;
 
     }
-
+	mStuffingBytes = m_AdaptationFieldLength - 1;
+	m_time = static_cast<float>(m_PCR) / m_xTS.ExtendedClockFrequency_Hz;
     return m_AdaptationFieldLength;
-
-
-
-
-	return m_AdaptationFieldLength; 
     //parsing
 }
 /// @brief Print all TS packet header fields
 void xTS_AdaptationField::Print() const
 {
-    if (m_PR == 1) {
-        printf(" || AF: L=%3d DC=%d RA=%d SP=%d PR=%d OR=%d SF=%d TP=%d EX=%d PCR=%10d",
+
+       printf(" || AF: L=%3d DC=%d RA=%d SP=%d PR=%d OR=%d SF=%d TP=%d EX=%d",
             m_AdaptationFieldLength,
             m_RA,
             m_DC,
@@ -147,7 +147,14 @@ void xTS_AdaptationField::Print() const
             m_OR,
             m_SF,
             m_TP,
-            m_EX,
-            m_PCR);
-    }
+            m_EX);
+
+        if (m_PR == true || m_OR == true) {
+            printf(" PCR=%d (Time=%fs) Stuffing=0",
+                m_PCR,
+                m_time);
+        }else {
+            printf(" Stuffing=%d", m_AdaptationFieldLength - 1);
+        }
+   
 }
