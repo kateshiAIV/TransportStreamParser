@@ -122,6 +122,10 @@ protected:
     bool m_SF; // Splicing point flag
     bool m_TP; // Transport private data flag 
     bool m_EX; // Adaptation field extension flag
+	uint64_t program_clock_reference_base; 
+    uint8_t reserved; 
+    uint64_t program_clock_reference_extension; 
+    uint64_t m_PCR;
 public:
     void Reset();
     int32_t Parse(const uint8_t* PacketBuffer, uint8_t AdaptationFieldControl);
