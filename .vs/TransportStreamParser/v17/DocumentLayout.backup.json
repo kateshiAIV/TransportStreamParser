@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\670336309\\OneDrive - Signify\\Dokumenty\\Parser\\TransportStreamParser\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\670336309\\OneDrive - Signify\\Dokumenty\\Parser\\TransportStreamParser\\TS_parser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TS_parser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\670336309\\OneDrive - Signify\\Dokumenty\\Parser\\TransportStreamParser\\tsTransportStream.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:tsTransportStream.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\670336309\\OneDrive - Signify\\Dokumenty\\Parser\\TransportStreamParser\\tsTransportStream.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:tsTransportStream.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\670336309\\OneDrive - Signify\\Dokumenty\\Parser\\TransportStreamParser\\TS_parser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TS_parser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\670336309\\AppData\\Local\\Temp\\7f1ac024-79b0-461f-b56f-e454f4811a8f_TS_parser_S4.zip.TS_parser_S4.zip\\TS_parser_S4\\tsTransportStream.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -35,7 +35,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
@@ -86,25 +86,23 @@
               "RelativeToolTip": "tsCommon.h",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-06T11:06:20.906Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-06T11:06:20.906Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "tsTransportStream.cpp",
               "DocumentMoniker": "C:\\Users\\670336309\\OneDrive - Signify\\Dokumenty\\Parser\\TransportStreamParser\\tsTransportStream.cpp",
               "RelativeDocumentMoniker": "tsTransportStream.cpp",
               "ToolTip": "C:\\Users\\670336309\\OneDrive - Signify\\Dokumenty\\Parser\\TransportStreamParser\\tsTransportStream.cpp",
               "RelativeToolTip": "tsTransportStream.cpp",
-              "ViewState": "AgIAAAYBAAAAAAAAAAAAABIBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYBAAAAAAAAAAAAABoBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-06T11:06:19.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-06T11:06:19.562Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "tsTransportStream.h",
               "DocumentMoniker": "C:\\Users\\670336309\\OneDrive - Signify\\Dokumenty\\Parser\\TransportStreamParser\\tsTransportStream.h",
               "RelativeDocumentMoniker": "tsTransportStream.h",
@@ -112,18 +110,17 @@
               "RelativeToolTip": "tsTransportStream.h",
               "ViewState": "AgIAAFIAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-06T11:06:17.902Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-06T11:06:17.902Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "TS_parser.cpp",
               "DocumentMoniker": "C:\\Users\\670336309\\OneDrive - Signify\\Dokumenty\\Parser\\TransportStreamParser\\TS_parser.cpp",
               "RelativeDocumentMoniker": "TS_parser.cpp",
               "ToolTip": "C:\\Users\\670336309\\OneDrive - Signify\\Dokumenty\\Parser\\TransportStreamParser\\TS_parser.cpp",
               "RelativeToolTip": "TS_parser.cpp",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAwwFcAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-06T11:06:16.655Z",
               "EditorCaption": ""

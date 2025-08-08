@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <fstream>
 #include <cstdio> // For FILE* and fopen
 #include "tsCommon.h"   
@@ -14,6 +14,7 @@ int main(int argc, char* argv[], char* envp[])
 
    
     FILE* transportStream = std::fopen("example_new.ts", "rb");
+    FILE* transportStreamOut = std::fopen("output.mp2", "wb");
 
     
     if (!transportStream) {
@@ -49,12 +50,33 @@ int main(int argc, char* argv[], char* envp[])
             xPES_Assembler::eResult Result = PES_Assembler.AbsorbPacket(TS_PacketBuffer, &TS_PacketHeader, &TS_AdaptationField);
             switch (Result)
             {
-            case xPES_Assembler::eResult::StreamPackedLost: printf("PcktLost "); break;
-            case xPES_Assembler::eResult::AssemblingStarted: printf("Started "); PES_Assembler.PrintPESH(); break;
-            case xPES_Assembler::eResult::AssemblingContinue: printf("Continue "); break;
-            case xPES_Assembler::eResult::AssemblingFinished: printf("Finished "); printf("PES: Len=%d", PES_Assembler.getNumPacketBytes()); break;
-            default: break;
+            case xPES_Assembler::eResult::StreamPackedLost:
+                printf(" || PcktLost ");
+                break;
+
+            case xPES_Assembler::eResult::AssemblingStarted:
+                printf(" || Started ");
+                PES_Assembler.PrintPESH();
+                break;
+
+            case xPES_Assembler::eResult::AssemblingContinue:
+                printf(" || Continue ");
+                break;
+
+            case xPES_Assembler::eResult::AssemblingFinished:
+                printf(" || Finished ");
+                printf("PES: Len=%d", PES_Assembler.getNumPacketBytes());
+
+                // Zapisz zawartość PES do pliku mp2
+                if (PES_Assembler.getPacket() != nullptr && PES_Assembler.getNumPacketBytes() > 0) {
+                    std::fwrite(PES_Assembler.getPacket(), 1, PES_Assembler.getNumPacketBytes(), transportStreamOut);
+                }
+                break;
+
+            default:
+                break;
             }
+
             printf("\n");
         }
 
@@ -63,7 +85,7 @@ int main(int argc, char* argv[], char* envp[])
 
     // Close the file
     std::fclose(transportStream);
-
+    std:fclose(transportStreamOut);
     return EXIT_SUCCESS;
 }
 
